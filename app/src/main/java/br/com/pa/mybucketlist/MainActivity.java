@@ -17,12 +17,13 @@ public class MainActivity extends AppCompatActivity {
         CardView placesToGoCardView = findViewById(R.id.card_view_places_to_go);
 
         thingsToDoCardView.setOnClickListener(v -> {
-            Intent thingToDoIntent = new Intent(MainActivity.this, ThingsToDoActivity.class);
-            startActivity(thingToDoIntent);
+            Intent thingsToDoIntent = new Intent(MainActivity.this, ThingsToDoActivity.class);
+            startActivity(thingsToDoIntent);
         });
 
         placesToGoCardView.setOnClickListener(v -> {
-
+            Intent placesToGoIntent = new Intent(MainActivity.this, PlacesToGoActivity.class);
+            startActivity(placesToGoIntent);
         });
     }
 }
