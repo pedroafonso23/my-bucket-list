@@ -14,10 +14,26 @@ public class PlacesToGoActivity extends AppCompatActivity {
 
         RecyclerView list = findViewById(R.id.recycler_view_bucket_list);
 
+        BucketListItem hog = new BucketListItem("Hogwarts", R.drawable.hogwarts);
+        BucketListItem moon = new BucketListItem("The Moon", R.drawable.moon);
+        BucketListItem flor = new BucketListItem("Florence", R.drawable.florence);
+
         BucketListItem[] thingsToDo = {
-                new BucketListItem("Hogwarts", R.drawable.hogwarts),
-                new BucketListItem("The Moon", R.drawable.moon),
-                new BucketListItem("Florence", R.drawable.florence)
+                hog,
+                moon,
+                flor,
+                hog,
+                moon,
+                flor,
+                hog,
+                moon,
+                flor,
+                hog,
+                moon,
+                flor,
+                hog,
+                moon,
+                flor,
         };
 
         BucketListAdapter adapter = new BucketListAdapter(thingsToDo);

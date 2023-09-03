@@ -14,10 +14,24 @@ public class ThingsToDoActivity extends AppCompatActivity {
 
         RecyclerView list = findViewById(R.id.recycler_view_bucket_list);
 
+        BucketListItem dev = new BucketListItem("Became a Senior Android Dev", R.drawable.android);
+        BucketListItem fly = new BucketListItem("Fly", R.drawable.fly);
+        BucketListItem rino = new BucketListItem("Ride a rhinoceros", R.drawable.rhinoceros);
+
+
         BucketListItem[] thingsToDo = {
-                new BucketListItem("Became a Senior Android Dev", R.drawable.android),
-                new BucketListItem("Fly", R.drawable.fly),
-                new BucketListItem("Ride a rhinoceros", R.drawable.rhinoceros)
+                dev,
+                fly,
+                rino,
+                dev,
+                fly,
+                rino,
+                dev,
+                fly,
+                rino,
+                dev,
+                fly,
+                rino,
         };
 
         BucketListAdapter adapter = new BucketListAdapter(thingsToDo);
